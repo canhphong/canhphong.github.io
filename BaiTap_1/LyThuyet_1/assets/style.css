@@ -17,12 +17,14 @@ textarea {
 	height: 120px;
 }
 .comment-text {
-	background-color: #ececec;
+  background-color: #ececec;
   padding: 5px;
+  margin-top: 2px;
 }
 .posted-by {
 	font-size: 14px;
 	margin-left: 50px;
+	margin-top: -16px;
 }
 .comment-title {
 	font-size: 20px;

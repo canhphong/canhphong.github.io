@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.header {background-color: #2d2f35;}
+
+#our-product {
+	background-color: aliceblue;
+}
+.our-product-content p {
+	width: 30%;
+  margin-left: 100px;
+  float: left;
+}
+
+.our-product-content img { 
+	margin-left: 20%;
+}
+
+.slider {
+	position: relative;
+	margin-left: 10%;
+}
+
+.slider-number {
+	top: 5%;
+	left: 15%;
+}
+
+.news-email {
+	max-width: 30%;
+	float: left;
+	margin-left: 5%;
+}
+
+.news-notified {
+	max-width: 30%;
+	display: inline-block;
+	margin-left: 5%;
+}
+
+.news {
+	display: inline-block;
+}
+
