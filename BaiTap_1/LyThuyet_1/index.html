@@ -1,78 +1,102 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<title>Thuc Hanh Bai 1</title>
-	<link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>Thuc Hanh Bai 1</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-	<div class="container">
-		<div class="player-frofile">
-			<div class="avatar">
-				<img src="img/star.png" alt="avatar">
-			</div>
-			<div class="profile">
-				<textarea>
-					Noi sinh: Ha Noi
-					Ngay sinh: 29/10/1990
-					Vi tri: Team Leader
-					Cao: 170cm
-					Nang: 65 kg
-				</textarea>
-			</div>
-		</div>
-		<div class="facts">
-			<h4>Facts:</h4>
-			<ul>
-		
-				<li><img src="img/icon-star.png" alt="star">Nam gia nhap the cong 1999</li>
-				<li><img src="img/icon-star.png" alt="star">Trong suot thoi trai tre gia nhap the cong nham da ghi duoc 160 ban thang trong vong 7 nam</li>
-				<li><img src="img/icon-star.png" alt="star">Nam choi tran dau tien cho U21 Viet Nam vao do tuoi 16</li>
-				<li><img src="img/icon-star.png" alt="star">Nam da dat cup u21 Viet Nam vao nam 2007</li>
-				<li><img src="img/icon-star.png" alt="star">Nam da doat cup cau thu xuat sac nhat trong nam</li>
-			</ul>
-			
-		</div>
-		<div class="comment">
-				<div class="comment-block">
-					<p class="comment-text">Nam choi cau lac o the cong<br>
-					The cong doat chuc vo dich</p>
-					<img src="img/comment-bg.png" alt="comment-bg">
-					<div class="posted-by">Posted by <a href="#">The Cong's Fan</a> 20/12/2017</div>
-				</div>
-				
-				<div class="comment-block">
-					<p class="comment-text">Nam la cau thu choi rat hay o the cong<br>
-						Va anh da chuyen toi Hoa Phat</p>
-					<img src="img/comment-bg.png" alt="comment-bg">
-					<div class="posted-by">Posted by <a href="#">Hoa Phat's Fan</a> 20/12/2017</div>	
-				</div>
-			</div>
-			
-					<!-- Form comment to fill input -->
-		<div class="your-comment">
-			<table>
-				<tr>
-					<td colspan="2" class="comment-title">Your Comment</td>
-				</tr>
-				<tr>
-					<td>Your name</td>
-					<td><input type="text"></td>
-				</tr>
-			<tr>
-				<td>Your email (will not public)</td>
-				<td><input type="text"></td>
-			</tr>
-			<tr>
-				<td>Comment</td>
-				<td><textarea placeholder="Your comment here"></textarea></td>
-			</tr>
-			</table>
-		</div>
-		</div>
+  <div class="container">
+    <!-- Section Player profile   -->
+    <section class="player-profile">
+      <div class="title">Player Profile</div>
+      <div class="avatar">
+        <img src="img/star.png" alt="avatar">
+      </div>
+      <div class="profile">
+        Noi sinh: Ha Noi
+        <br> Ngay sinh: 29/10/1990
+        <br> Vi tri: Team Leader
+        <br> Cao: 170cm
+        <br> Nang: 65 kg
+      </div>
+    </section>
+    <div class="clear-both"></div>
+    <!-- Section facts -->
+    <section class="facts">
+      <div class="title">Facts:</div>
+      <ul>
+        <li>
+          <img src="img/icon-star.png" alt="star">
+          <span>Nam gia nhap the cong 1999</span>
+        </li>
+        <li>
+          <img src="img/icon-star.png" alt="star">Trong suot thoi trai tre gia nhap the cong nham da ghi duoc 160 ban thang trong vong 7 nam</li>
+        <li>
+          <img src="img/icon-star.png" alt="star">Nam choi tran dau tien cho U21 Viet Nam vao do tuoi 16</li>
+        <li>
+          <img src="img/icon-star.png" alt="star">Nam da dat cup u21 Viet Nam vao nam 2007</li>
+        <li>
+          <img src="img/icon-star.png" alt="star">Nam da doat cup cau thu xuat sac nhat trong nam</li>
+      </ul>
 
+    </section>
+    <!-- Section comment -->
+    <section class="comment">
+      <div class="comment-block">
+        <p class="comment-text">Nam choi cau lac o the cong
+          <br> The cong doat chuc vo dich</p>
+        <img src="img/comment-bg.png" alt="comment-bg">
+        <div class="posted-by">Posted by
+          <a href="#">The Cong's Fan</a> 20/12/2017</div>
+      </div>
 
-	</div>
+      <div class="comment-block">
+        <p class="comment-text">Nam la cau thu choi rat hay o the cong
+          <br> Va anh da chuyen toi Hoa Phat</p>
+        <img src="img/comment-bg.png" alt="comment-bg">
+        <div class="posted-by">Posted by
+          <a href="#">Hoa Phat's Fan</a> 20/12/2017</div>
+      </div>
+    </section>
+
+    <!-- Section form comment to fill input -->
+    <section class="your-comment">
+      <table>
+        <tr>
+          <td colspan="2" class="comment-title">Your Comment</td>
+        </tr>
+        <tr>
+          <td>
+            <label for="name">Your name</label>
+          </td>
+          <td>
+            <input type="text">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Your email (will not public)</label>
+          </td>
+          <td>
+            <input type="text">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="comment">Comment</label>
+          </td>
+          <td>
+            <textarea placeholder="Your comment here"></textarea>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </div>
+  </div>
 </body>
+
 </html>
