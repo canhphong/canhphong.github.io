@@ -1,8 +1,11 @@
+/* Reset CSS for body tag */
 body {
 	margin: 0;
 	padding: 0;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+.clear-both {clear: both;}
 
 #container {
 	width: 500px;
@@ -10,6 +13,13 @@ body {
 	margin: 0 auto;
 	padding: 5px;
 	box-sizing: border-box;
+}
+/* Format for Player Profile */
+.title {
+	background: url(../img/title_bg.gif) repeat-x;
+	font-weight: bold;
+	padding-top: 5px;
+	height: 30px;
 }
 
 .profile-info {
@@ -20,25 +30,22 @@ body {
 	overflow: scroll;
 }
 
-.avatar {
-	float: left;
+.facts .title {background: none;}
+
+.facts ul {
+	margin-top: 0;
+	margin-bottom: 50px;
+	list-style: none;
 }
 
-textarea {
-	width: 300px;
-	height: 120px;
-}
+.avatar {float: left;}
+
+/* Format for comment form */
 
 .comment-text {
 	background-color: #ececec;
 	padding: 5px;
 	margin-top: 2px;
-}
-
-.posted-by {
-	font-size: 14px;
-	margin-left: 50px;
-	margin-top: -16px;
 }
 
 .comment-title {
@@ -47,9 +54,7 @@ textarea {
 	text-align: center;
 }
 
-.comment-block {
-	position: relative;
-}
+.comment-block {position: relative;}
 
 .comment-block img {
 	position: absolute;
@@ -58,31 +63,19 @@ textarea {
 	margin-left: 15px;
 }
 
-ul {
-	list-style: none;
+.posted-by {
+	font-size: 14px;
+	margin-left: 50px;
+	margin-top: -16px;
 }
 
-.your-comment {
-	margin-top: 20px;
-}
-
-.clear-both {
-	clear: both;
-}
-
-.title {
-	background: url(../img/title_bg.gif) repeat-x;
-	font-weight: bold;
-	padding-top: 5px;
-	height: 30px;
-}
-
-.facts .title {background: none;}
-.facts ul {
-	margin-top: 0;
-	margin-bottom: 50px;
-}
+.your-comment {margin-top: 20px;}
 
 textarea {
+	width: 300px;
+	height: 120px;
 	resize: none;
 }
+
+
+
