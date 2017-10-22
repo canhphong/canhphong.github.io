@@ -4,7 +4,7 @@ body {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.container {
+#container {
 	width: 500px;
 	border: 1px solid #0033ff;
 	margin: 0 auto;
@@ -12,7 +12,7 @@ body {
 	box-sizing: border-box;
 }
 
-.profile {
+.profile-info {
 	background-color: #eee;
 	max-width: 100%;
 	height: 100px;
@@ -71,6 +71,18 @@ ul {
 }
 
 .title {
-	font-size: 16px;
+	background: url(../img/title_bg.gif) repeat-x;
 	font-weight: bold;
+	padding-top: 5px;
+	height: 30px;
+}
+
+.facts .title {background: none;}
+.facts ul {
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+
+textarea {
+	resize: none;
 }

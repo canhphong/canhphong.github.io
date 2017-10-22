@@ -8,15 +8,15 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body>
-  <div class="container">
+<body>    
+  <div id="container">
     <!-- Section Player profile   -->
-    <section class="player-profile">
+    <section class="profile">
       <div class="title">Player Profile</div>
       <div class="avatar">
-        <img src="img/star.png" alt="avatar">
+        <img src="img/avatar.gif" alt="avatar">
       </div>
-      <div class="profile">
+      <div class="profile-info">
         Noi sinh: Ha Noi
         <br> Ngay sinh: 29/10/1990
         <br> Vi tri: Team Leader
@@ -30,17 +30,17 @@
       <div class="title">Facts:</div>
       <ul>
         <li>
-          <img src="img/icon-star.png" alt="star">
+          <img src="img/star.gif" alt="star">
           <span>Nam gia nhap the cong 1999</span>
         </li>
         <li>
-          <img src="img/icon-star.png" alt="star">Trong suot thoi trai tre gia nhap the cong nham da ghi duoc 160 ban thang trong vong 7 nam</li>
+          <img src="img/star.gif" alt="star">Trong suot thoi trai tre gia nhap the cong nham da ghi duoc 160 ban thang trong vong 7 nam</li>
         <li>
-          <img src="img/icon-star.png" alt="star">Nam choi tran dau tien cho U21 Viet Nam vao do tuoi 16</li>
+          <img src="img/star.gif" alt="star">Nam choi tran dau tien cho U21 Viet Nam vao do tuoi 16</li>
         <li>
-          <img src="img/icon-star.png" alt="star">Nam da dat cup u21 Viet Nam vao nam 2007</li>
+          <img src="img/star.gif" alt="star">Nam da dat cup u21 Viet Nam vao nam 2007</li>
         <li>
-          <img src="img/icon-star.png" alt="star">Nam da doat cup cau thu xuat sac nhat trong nam</li>
+          <img src="img/star.gif" alt="star">Nam da doat cup cau thu xuat sac nhat trong nam</li>
       </ul>
 
     </section>
@@ -49,7 +49,7 @@
       <div class="comment-block">
         <p class="comment-text">Nam choi cau lac o the cong
           <br> The cong doat chuc vo dich</p>
-        <img src="img/comment-bg.png" alt="comment-bg">
+        <img src="img/comment_bg.gif" alt="comment-bg">
         <div class="posted-by">Posted by
           <a href="#">The Cong's Fan</a> 20/12/2017</div>
       </div>
@@ -57,7 +57,7 @@
       <div class="comment-block">
         <p class="comment-text">Nam la cau thu choi rat hay o the cong
           <br> Va anh da chuyen toi Hoa Phat</p>
-        <img src="img/comment-bg.png" alt="comment-bg">
+        <img src="img/comment_bg.gif" alt="comment-bg">
         <div class="posted-by">Posted by
           <a href="#">Hoa Phat's Fan</a> 20/12/2017</div>
       </div>
@@ -71,26 +71,26 @@
         </tr>
         <tr>
           <td>
-            <label for="name-id">Your name</label>
+            <label>Your name</label>
           </td>
           <td>
-            <input type="text">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="email-id">Your email (will not public)</label>
-          </td>
-          <td>
-            <input type="text">
+            <input type="text" name="name">
           </td>
         </tr>
         <tr>
           <td>
-            <label for="comment-id">Comment</label>
+            <label>Your email (will not public)</label>
           </td>
           <td>
-            <textarea placeholder="Your comment here"></textarea>
+            <input type="text" name="email">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Comment</label>
+          </td>
+          <td>
+            <textarea >Your comment here &lt;/textarea&gt; </textarea>
           </td>
         </tr>
       </table>
