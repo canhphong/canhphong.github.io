@@ -1,77 +1,68 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Bài tập 2 lý thuyết</title>
+    <title>Bài tập Lý thuyết 2 HTML/CSS</title>
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
     <div id="wrapper">      
-      <!-- Blogroll Block  -->
-      <div class="title">Blogroll</div>
-      <div class="info">
-        <div class="blogroll">
-          <div class="blogroll-image">
-            <img src="img/LT1.jpg" alt="LT1">
-          </div>
-          <div class="blogroll-info">
-            <b>The Nerve</b>
-            <p><i>Top Gear Australia</i> fires off the grid tonight, but who is The Stig?</p>
+      <!-- blog Block  -->
+      <p class="title">Blog</p>
+        <div class="blog info">
+            <img class="blog__image" src="img/LT1.jpg" alt="LT1">
+          <div class="blog__content">
+            <p class="blog__content--title">The Nerve</p>
+            <p class="blog__content--text"><i>Top Gear Australia</i> fires off the grid tonight, but who is The Stig?</p>
           </div>
           <div class="clear-fix"></div>
         </div>
-      </div>
-      <div class="blogroll-talk">
-        <ul>
+   
+      <div class="blog__chat">
+        <ul class="blog__chat--list">
           <li><b>Splat!:</b> Sometimes, surely a girl just wants sex?</li>
           <li><b>Ask Bossy:</b> I called the one-armed man ...</li>
           <li><b>Blogocracy:</b> It's hello and goodbye from me</li>
         </ul>
       </div>
       <!--  Horoscopes Block-->
-      <div class="title">Horoscopes</div>
-      <div class="info">
-        <div class="horoscopes">
-          <div class="horoscopes-image">
-            <img src="img/LT2.jpg" alt="LT2">
-          </div>
-          <div class="horoscopes-info">
-            <b>Libra</b>
-            <p class="date">Sep 24 - Oct 23</p>
+    <p class="title">Horoscopes</p>
+  
+        <div class="horo info">
+    
+            <img class="horo__image" src="img/LT2.jpg" alt="LT2">
+      
+          <div class="horo__content">
+            <p class="horo__content--title">Libra</p>
+            <p class="horo__content--date">Sep 24 - Oct 23</p>
             <p>There's something you consider attractive but impossible. Watch out. It is actually possible. Your dream could come true. Your wish could be granted. Your hope could turn out to... <a href="#">&gt;&gt;</a></p>
           </div>
           <div class="clear-fix"></div>
         </div>
-      </div>
-      <div class="horoscopes-footer">
-        <div class="horoscopes-footer-info">
+      <div class="horo__author">
+        <div class="horo__author--info">
           <p>Powered by Jonathan Cainer</p>
-          <a href="#">Read All Horoscopes</a>
+          <a class="read-more" href="#">Read All Horoscopes</a>
         </div>
-        <div class="horoscopes-footer-image">
-          <img src="img/LT3.jpg" alt="LT3">
-        </div>
-        <div class="clear"></div>
+    
+          <img class="horo__author--img" src="img/LT3.jpg" alt="LT3">
+       
+        <div class="clear-fix"></div>
       </div>
       <!--  Get news on the go Block -->
-      <div class="title">Get news on the go</div>
-      <div class="get-news-info">
-        <div class="get-news-on-the-go">
-          <div class="get-news-inner-info">
-            <p>Keep in touch with the latest news on the move with the mobile edition of News.com.au</p>
-            <div class="get-news-mobile">
-              <a href="#">Get News mobile</a>
-            </div>
+      <p class="title">Get news on the go</p>
+      <div class="news  info">
+          <div class="news__content">
+            <p class="news__content--text">Keep in touch with the latest news on the move with the mobile edition of News.com.au</p>
+              <a class="read-more" href="#">Get News mobile</a>
           </div>
-          <div class="get-news-image">
-            <img src="img/LT4.jpg" alt="LT4">
-          </div>
+            <img class="news__image" src="img/LT4.jpg" alt="LT4">
           <div class="clear-fix"></div>
-        </div>
       </div>
-      <div class="horizontal"></div>
-      <div class="competitions-title">Competitions</div>
-      <div class="competitions">
-        <ul>
+      <div class="line"></div>
+            <!--  Competitions Block -->
+      <div class="comp">
+      <p class="title">Competitions</p>
+        <ul class="comp__list">
           <li><a href="#">Win 1 of 4 trips to Darwin</a></li>
           <li><a href="#">Win a trip for you and 3 friends to the Melbourne</a></li>
           <li><a href="#">Cup with Sunglass Hut!</a></li>

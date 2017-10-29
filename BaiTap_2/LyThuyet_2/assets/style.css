@@ -1,3 +1,4 @@
+/* Common Elements */
 @charset "utf-8";
 body {
 	margin: 0;
@@ -6,15 +7,27 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.clear-fix { clear: both; }
-
 #wrapper {
 	width: 300px;
 	margin: 0 auto;
 	background-color: #cde9e9;
-	padding: 10px;
-  
+	padding: 5px 10px 10px 10px;
 }
+
+.read-more {
+	font-weight: bold;
+	text-decoration: none;
+	color: #0a6395;
+}
+
+.line {
+	border-bottom: 1px solid #dadee0;
+	margin: 15px 0 8px 0;
+}
+
+.clear-fix {clear: both;}
+
+p {margin: 0}
 
 .title {
 	font-weight: bold;
@@ -22,51 +35,121 @@ body {
 }
 
 .info {
-
-}
-
-.blogroll {
 	background-color: #fff;
 	border-top: 2px solid #ffa500;
-} 
+}
 
-.blogroll-image img {
+
+/* blog Elements */
+
+.blog__image{
 	float: left;
 	width: 160px;
 	height: auto;
-	border: 1px solid #d2c7c7;
+	border: 1px solid #ccc;
 	margin: 6px;
 }
 
-.blogroll-info {
-  padding: 5px;
+.blog__content {
+	padding: 5px;
 }
 
-.blogroll-info b {
-	color: #35d1d1;
+.blog__content--title  {
+	color: #0a6395;
+	font-weight: bold;
 }
 
-.blogroll-info  p {
-  margin: 0;
+.blog__content--text {
+	width: 270px;
 }
 
-.blogroll-talk ul {
+.blog__chat--list {
 	list-style-type: none;
-	padding-left: 5px;	
+	padding-left: 5px;
+	margin-bottom: 0;
 }
 
-.blogroll-talk ul li {
-	background-color: antiquewhite;
+.blog__chat--list li {
+	background-color: #faf0bf;
 	padding: 5px;
 	color: #0a6395;
+	border-bottom: 1px solid #fff;
+}
+/*  Horoscopes Elements*/
+
+.horo {
+	background-color: #fff;
+	border-top: 2px solid #ffa500;
+	padding-top: 25px;
+	padding-left: 15px;
+	padding-bottom: 30px;
 }
 
-.horoscopes {
-
-}
-
-.horoscopes-image img {
+.horo__image {
 	float: left;
-	width: 90px;
-	padding-right: 10px;
+	width: 80px;
+	height: 100px;
+	margin: 0 21px 0 1px;
+}
+
+.horo__content--title {
+	font-weight: bold;
+	color: #000;
+}
+
+.horo__content--date {
+	color: #808080;
+	margin-bottom: 8px;
+}
+
+.horo__author {
+	background-color: #f4f4ec;
+	margin-bottom: 20px;
+}
+
+.horo__author--info {
+	float: left;
+	margin: 15px 0 0 20px;
+}
+
+.horo__author--img {
+	float: right;
+	width: 70px;
+	height: auto;
+}
+
+/* News Elements */
+.news__image {
+	float: right;
+	width: 125px;
+	height: auto;
+}
+
+.news__content {
+	float: left;
+	margin: 25px 0 0 25px;
+}
+
+.news__content--text {
+	width: 140px;
+	padding-bottom: 5px;
+}
+
+/* Competitions Elements*/
+
+.comp .title {font-size: 11px;} 
+.comp__list {
+	background-color: #fff;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin: 0;
+}
+
+.comp__list li {
+	list-style-type: none;
+}
+
+.comp__list li a {
+	text-decoration: none;
+	color: #0a6395;
 }
