@@ -1,46 +1,58 @@
-/* The general format for the body tag */
+/* Bem methodology CSS */
+/* Begin  Shared CSS */
 body {
 	margin: 0;
 	padding: 0;
 	background-color: #2d2f35;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
-.clear-both {clear: both;}
 
-/* Format for section banner*/
-.our-product {
+.text {
+	color: #fff;
+	letter-spacing: -0.04px;
+	font-size: smaller;	
+	}
+
+	.title {
+		color: yellow;
+		letter-spacing: 0.8px;
+		font-family: Courier New;
+	}
+
+h2,
+h3,
+p {margin: 0}
+.clear {clear: both;}
+/* End  Shared CSS */
+
+/*Begin  Banner */
+.banner {
 	background-image: url(../img/bg_home_intro.gif);
 	overflow: auto;
-	padding:  0 6% 0 10%;
+	padding:  0 5% 0 10%;
 }
-.our-product-left {
-	width: 38%;
+.banner__title {margin-bottom: 35px;}
+.banner__content{width: 75%}
+
+.banner--left {
+	width: 50%;
   float: left;
 }
 
-.our-product-right {
-	position: absolute;
+.banner--right {
 	float: left;
 	right: 10%;
-	
 }
+/*End  Banner */
 
-.our-product-content img { 
-	margin-left: 20%;
-}
-
-/* Section slider */
-.slider {
-	width: 100%;
-}
-
-.slider ul {
+/* Begin Slider */
+.slider__list {
 	width: 100%;
 	list-style-type: none;
 	text-align: center;
 }
 
-.slider ul li {
+.slider__list li {
 	display: inline-block;
 	margin-right: 20px;
 }
@@ -49,14 +61,17 @@ body {
 	position: absolute;
 	padding: 2px 0 0 186px;
 }
+/* End Slider */
 
-/* Section News  has email columns and notified columns */
+/* Begin News */
 .news {
 	float: left;
 	padding: 5px 10% 0 10%;
 }
 
-.news__left {
+.news__title {margin-bottom: 50px;}
+
+.news__row--left {
 width: 40%;
 float: left ;
 text-align: justify;
@@ -65,36 +80,24 @@ background-repeat: no-repeat;
 background-position: bottom right; 
 }
 
-.news__left h3 {
+.news__row--left h3 {
 	font-size: 20px;
 	margin-bottom: 0; 
 }
-.title {
-	color: yellow;
-	letter-spacing: 0.8px;
-	font-family: Courier New;
-}
- p {
-color: #fff;
-letter-spacing: -0.04px;
-margin-top: 0;
-font-size: smaller;
 
-}
-.news__right {
+.news__row--right {
 	width: 40%;
 	float: right;
 	text-align: justify;
 	background-image: url(../img/home_services_bg_marketing.gif);
 	background-repeat: no-repeat;
 }
+/* End News */
 
-/* Section copyright */
+/* Begin Footer */
 #copyright {
 	text-align: center;
-	color: #fff;
-	font-size: 14px;
 	background: url(../img/bg_footer.gif) center no-repeat #24262a;
-	height: 120px;;
+	height: 120px;
 }
-
+/* End Footer */
