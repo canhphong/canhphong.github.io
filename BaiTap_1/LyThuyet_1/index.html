@@ -9,14 +9,12 @@
 </head>
 
 <body>    
-  <div id="container">
-    <!-- Section Player profile   -->
+  <div id="wrapper">
+    <!-- Player Profile Block  -->
     <section class="profile">
-      <div class="title">Player Profile</div>
-      <div class="avatar">
-        <img src="img/avatar.gif" alt="avatar">
-      </div>
-      <div class="profile-info">
+      <p class="title">Player Profile</p>
+        <img class="profile__img" src="img/avatar.gif" alt="avatar">
+      <div class="profile__info">
         Noi sinh: Ha Noi
         <br> Ngay sinh: 29/10/1990
         <br> Vi tri: Team Leader
@@ -24,77 +22,67 @@
         <br> Nang: 65 kg
       </div>
     </section>
-    <div class="clear-both"></div>
-    <!-- Section facts -->
+    <div class="clear"></div>
+    <!-- Facts Block -->
     <section class="facts">
-      <div class="title">Facts:</div>
-      <ul>
+      <p class="facts__title title">Facts:</p>
+      <ul class="facts__list">
         <li>
           <img src="img/star.gif" alt="star">
-          <span>Nam gia nhap the cong 1999</span>
+          <span>Nam gia nhap The Cong 1999</span>
         </li>
         <li>
-          <img src="img/star.gif" alt="star">Trong suot thoi trai tre gia nhap the cong nham da ghi duoc 160 ban thang trong vong 7 nam</li>
+          <img src="img/star.gif" alt="star">Trong suot thoi trai tre gia nhap The cong nham da ghi duoc 160 ban thang trong vong 7 nam</li>
         <li>
           <img src="img/star.gif" alt="star">Nam choi tran dau tien cho U21 Viet Nam vao do tuoi 16</li>
         <li>
           <img src="img/star.gif" alt="star">Nam da dat cup u21 Viet Nam vao nam 2007</li>
         <li>
-          <img src="img/star.gif" alt="star">Nam da doat cup cau thu xuat sac nhat trong nam</li>
+          <img src="img/star.gif" alt="star">Nam da dat cup cau thu xuat sac nhat trong nam</li>
       </ul>
 
     </section>
-    <!-- Section comment -->
+    <!-- Comment Block -->
     <section class="comment">
-      <div class="comment-block">
-        <p class="comment-text">Nam choi cau lac o the cong
+      <div class="comment__content">
+        <p class="comment__content--text">Nam choi cau lac o the cong.
           <br> The cong doat chuc vo dich</p>
-        <img src="img/comment_bg.gif" alt="comment-bg">
-        <div class="posted-by">Posted by
-          <a href="#">The Cong's Fan</a> 20/12/2017</div>
+        <img class="comment__content--img" src="img/comment_bg.gif" alt="comment-bg">
+        <p class="comment__content--author">Posted by
+          <a href="#">The Cong's Fan</a> 20/12/2007.</p>
       </div>
 
-      <div class="comment-block">
-        <p class="comment-text">Nam la cau thu choi rat hay o the cong
-          <br> Va anh da chuyen toi Hoa Phat</p>
-        <img src="img/comment_bg.gif" alt="comment-bg">
-        <div class="posted-by">Posted by
-          <a href="#">Hoa Phat's Fan</a> 20/12/2017</div>
+      <div class="comment__content">
+        <p class="comment__content--text">Nam la cau thu choi rat hay o the cong
+          <br> Va anh da chuyen toi Hoa phat <>:)</p>
+        <img class="comment__content--img" src="img/comment_bg.gif" alt="comment-bg">
+        <p class="comment__content--author">Posted by
+          <a href="#">Hoa Phat's Fan</a> 20/12/2007.</p>
       </div>
     </section>
 
-    <!-- Section form comment to fill input -->
-    <section class="your-comment">
-      <table>
-        <tr>
-          <td colspan="2" class="comment-title">Your Comment</td>
-        </tr>
-        <tr>
-          <td>
-            <label>Your name</label>
-          </td>
-          <td>
-            <input type="text" name="name">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label>Your email (will not public)</label>
-          </td>
-          <td>
-            <input type="text" name="email">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label>Comment</label>
-          </td>
-          <td>
-            <textarea >Your comment here &lt;/textarea&gt; </textarea>
-          </td>
-        </tr>
-      </table>
-    </section>
+    <!-- Form Comment Block -->
+    <div class="reply">
+      <p class="reply__title title">Your Comment</p>
+      <div class="reply__row">
+        <p class="reply__row--left">Your name</p>
+        <div class="reply__row--right">
+          <input type="text" name="fullName">
+        </div>
+      </div>
+      <div class="reply__row">
+        <p class="reply__row--left">Your email (will not public)</p>
+        <div class="reply__row--right">
+          <input type="text" name="email">
+        </div>
+      </div>
+      <div class="reply__row">
+        <p class="reply__row--left">Comment</p>
+        <div class="reply__row--right">
+          <textarea name="comment" cols="45" rows="5">Your comment here &lt;/textarea&gt;</textarea>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 

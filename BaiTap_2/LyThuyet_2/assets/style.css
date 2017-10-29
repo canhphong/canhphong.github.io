@@ -1,4 +1,5 @@
-/* Common Elements */
+/* Bem methodology CSS */
+/* Begin  Shared CSS */
 @charset "utf-8";
 body {
 	margin: 0;
@@ -25,10 +26,6 @@ body {
 	margin: 15px 0 8px 0;
 }
 
-.clear-fix {clear: both;}
-
-p {margin: 0}
-
 .title {
 	font-weight: bold;
 	font-size: 12px;
@@ -39,9 +36,12 @@ p {margin: 0}
 	border-top: 2px solid #ffa500;
 }
 
+.clear-fix {clear: both;}
+p {margin: 0}
 
-/* blog Elements */
+/* End  Shared CSS */
 
+/* Begin Blog*/
 .blog__image{
 	float: left;
 	width: 160px;
@@ -75,8 +75,9 @@ p {margin: 0}
 	color: #0a6395;
 	border-bottom: 1px solid #fff;
 }
-/*  Horoscopes Elements*/
+/* End  Blog*/
 
+/*  Begin Horoscopes*/
 .horo {
 	background-color: #fff;
 	border-top: 2px solid #ffa500;
@@ -117,8 +118,9 @@ p {margin: 0}
 	width: 70px;
 	height: auto;
 }
+/*  End Horoscopes*/
 
-/* News Elements */
+/*Begin  News*/
 .news__image {
 	float: right;
 	width: 125px;
@@ -134,9 +136,9 @@ p {margin: 0}
 	width: 140px;
 	padding-bottom: 5px;
 }
+/*  End News*/
 
-/* Competitions Elements*/
-
+/*Begin  Competitions*/
 .comp .title {font-size: 11px;} 
 .comp__list {
 	background-color: #fff;
@@ -153,3 +155,4 @@ p {margin: 0}
 	text-decoration: none;
 	color: #0a6395;
 }
+/*End  Competitions*/
