@@ -7,73 +7,63 @@ body {
 	font-size: 11px;
 	font-family: Arial, Helvetica, sans-serif;
 }
-
 #wrapper {
 	width: 300px;
 	margin: 0 auto;
 	background-color: #cde9e9;
 	padding: 5px 10px 10px 10px;
 }
-
 .read-more {
 	font-weight: bold;
 	text-decoration: none;
 	color: #0a6395;
 }
-
 .line {
-	border-bottom: 1px solid #dadee0;
+	border-bottom: 1px solid #c3d1d8;
 	margin: 15px 0 8px 0;
 }
-
 .title {
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 13px;
 }
-
 .info {
 	background-color: #fff;
 	border-top: 2px solid #ffa500;
 }
-
 .clear-fix {clear: both;}
 p {margin: 0}
-
 /* End  Shared CSS */
 
 /* Begin Blog*/
-.blog__image{
+.blog_image{
 	float: left;
 	width: 160px;
 	height: auto;
 	border: 1px solid #ccc;
 	margin: 6px;
 }
-
-.blog__content {
+.blog_content {
 	padding: 5px;
 }
-
-.blog__content--title  {
+.blog_content--title  {
 	color: #0a6395;
 	font-weight: bold;
 }
-
-.blog__content--text {
+.blog_content--text {
 	width: 270px;
 }
-
-.blog__chat--list {
+.blog_chat--list {
 	list-style-type: none;
-	padding-left: 5px;
+	padding-left: 0;
+	margin-top: 0;
 	margin-bottom: 0;
 }
-
-.blog__chat--list li {
+.blog_chat--list li {
 	background-color: #faf0bf;
 	padding: 5px;
 	color: #0a6395;
 	border-bottom: 1px solid #fff;
+	line-height: 20px;
 }
 /* End  Blog*/
 
@@ -85,35 +75,32 @@ p {margin: 0}
 	padding-left: 15px;
 	padding-bottom: 30px;
 }
-
-.horo__image {
+.horo_title {
+	margin-top: 5px;
+}
+.horo_image {
 	float: left;
 	width: 80px;
 	height: 100px;
 	margin: 0 21px 0 1px;
 }
-
-.horo__content--title {
+.horo_content--title {
 	font-weight: bold;
 	color: #000;
 }
-
-.horo__content--date {
+.horo_content--date {
 	color: #808080;
 	margin-bottom: 8px;
 }
-
-.horo__author {
+.horo_author {
 	background-color: #f4f4ec;
 	margin-bottom: 20px;
 }
-
-.horo__author--info {
+.horo_author--info {
 	float: left;
 	margin: 15px 0 0 20px;
 }
-
-.horo__author--img {
+.horo_author--img {
 	float: right;
 	width: 70px;
 	height: auto;
@@ -121,18 +108,16 @@ p {margin: 0}
 /*  End Horoscopes*/
 
 /*Begin  News*/
-.news__image {
+.news_image {
 	float: right;
 	width: 125px;
 	height: auto;
 }
-
-.news__content {
+.news_content {
 	float: left;
 	margin: 25px 0 0 25px;
 }
-
-.news__content--text {
+.news_content--text {
 	width: 140px;
 	padding-bottom: 5px;
 }
@@ -140,18 +125,16 @@ p {margin: 0}
 
 /*Begin  Competitions*/
 .comp .title {font-size: 11px;} 
-.comp__list {
+.comp_list {
 	background-color: #fff;
 	padding: 10px;
 	border: 1px solid #ccc;
 	margin: 0;
 }
-
-.comp__list li {
+.comp_list li {
 	list-style-type: none;
 }
-
-.comp__list li a {
+.comp_list li a {
 	text-decoration: none;
 	color: #0a6395;
 }
