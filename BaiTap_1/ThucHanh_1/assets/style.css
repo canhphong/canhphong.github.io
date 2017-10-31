@@ -6,22 +6,22 @@ body {
 	background-color: #2d2f35;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
-
 .text {
-	color: #fff;
+  color: #fff;
 	letter-spacing: -0.04px;
 	font-size: smaller;	
+	margin: 0 0 45px 0;
+	line-height: 15px;
 	}
-
 	.title {
 		color: yellow;
 		letter-spacing: 0.8px;
 		font-family: Courier New;
 	}
-
 h2,
 h3,
-p {margin: 0}
+p {margin: 0;
+}
 .clear {clear: both;}
 /* End  Shared CSS */
 
@@ -30,15 +30,15 @@ p {margin: 0}
 	background-image: url(../img/bg_home_intro.gif);
 	overflow: auto;
 	padding:  0 5% 0 10%;
+	border-top: 1px solid #474a51;	
+	border-bottom: 1px solid #474a51;
 }
-.banner__title {margin-bottom: 35px;}
-.banner__content{width: 75%}
-
+.banner_title {margin-bottom: 20px;}
+.banner_content{width: 75%}
 .banner--left {
 	width: 50%;
   float: left;
 }
-
 .banner--right {
 	float: left;
 	right: 10%;
@@ -46,18 +46,21 @@ p {margin: 0}
 /*End  Banner */
 
 /* Begin Slider */
-.slider__list {
+.slider {
+	padding: 20px 0 0 0;
+}
+.slider_list {
 	width: 100%;
 	list-style-type: none;
 	text-align: center;
+	border-bottom: 1px solid #474a51;
+	padding-bottom: 20px;
 }
-
-.slider__list li {
+.slider_list li {
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 10px;
 }
-
-.slider__number {
+.slider_number {
 	position: absolute;
 	padding: 2px 0 0 186px;
 }
@@ -68,10 +71,8 @@ p {margin: 0}
 	float: left;
 	padding: 5px 10% 0 10%;
 }
-
-.news__title {margin-bottom: 50px;}
-
-.news__row--left {
+.news_title {margin-bottom: 50px;}
+.news_row--left {
 width: 40%;
 float: left ;
 text-align: justify;
@@ -79,13 +80,11 @@ background-image: url(../img/home_services_bg_design.gif);
 background-repeat: no-repeat;
 background-position: bottom right; 
 }
-
-.news__row--left h3 {
+.news_row--left h3 {
 	font-size: 20px;
 	margin-bottom: 0; 
 }
-
-.news__row--right {
+.news_row--right {
 	width: 40%;
 	float: right;
 	text-align: justify;
