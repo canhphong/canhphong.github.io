@@ -8,7 +8,6 @@ body {
   font-size: 10px;
   background-color: #000;
 }
-
 #wrapper {
   width: 850px;
   margin: 0 auto;
@@ -17,7 +16,6 @@ body {
 	background: #292728;
 	padding-bottom: 20px;
 }
-
 a {	text-decoration: none; }
 .clear { clear: both; }
 .dotted-top { border-top: 1px dotted #BCBFC0; }
@@ -28,7 +26,6 @@ a {	text-decoration: none; }
 	padding-bottom: 10px;
 	font-size: 11px;
 }
-
 .more a{
   position: relative;
   left: 215px;
@@ -43,7 +40,6 @@ a {	text-decoration: none; }
 	padding: 15px 0 0 2px;
 }
 .news__img{ width: 260px; }
-
 .news__post {
 	display: flex;
 	background: white url(../../img/confidential-logo.gif) no-repeat;
@@ -56,7 +52,6 @@ a {	text-decoration: none; }
 
 /* Showbuzz  */
 .showbuzz { width: 285px; }
-
 .showbuzz__title, .shootingstars__title {
 	background: url(../img/confidential-heading-bg.gif);
 	color: white;
