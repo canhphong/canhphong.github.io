@@ -59,9 +59,48 @@ a {	text-decoration: none; }
 	font-weight: bold;
 	padding: 5px 8px 5px 8px;
 }
-
 .showbuzz__info { border-right: 1px dotted #BCBFC0; }
 
+/* Shooting Stars */
+.shootingstars { width: 285px; }
+.shootingstars__title, .shootingstars__title {
+	background: url(../img/confidential-heading-bg.gif);
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 5px 8px 5px 8px;
+}
+.shootingstars__info { border-right: 1px dotted #BCBFC0; }
+
+
+/* Movie info */
+.movie_box {
+	width: 50%;
+}
+.movie_info {
+	background-color: #fff;
+}
+.movie_content {
+	padding: 5px;
+}
+.movie_content a {
+	color: rgb(35, 109, 245);
+	font-weight: bold;
+}
+.summary_title {
+	font-weight: bold;
+}
+.movie_content a::before {
+background-image: url(../img/close.jpg);
+}
+.summary_content {
+	padding: 5px;
+}
+
+.movie_img {
+	float: left;
+	margin: 5px;
+}
 
 
 
