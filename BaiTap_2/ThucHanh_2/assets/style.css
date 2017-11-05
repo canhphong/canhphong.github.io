@@ -83,9 +83,38 @@ p {margin: 0}
 	background-size: 265px auto ;
 }
 
-/* Movie info */
-.movie_box {
-	width: 50%;
+/* Movie Trailers */
+.movie {display: flex;}
+.movie_trailers {
+	width: 270px;
+	float: left;
+	margin: 0 15px 0 15px;
+} 
+.movie_title {
+	background: url(../img/top-movie-trailers-bg.gif);
+	padding: 5px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+}
+.movie_accordion--title {
+	width: 100%;
+	color: #0f20bb;
+	text-align: left;
+}
+.movie_accordion--title::after {
+	content: url(../img/close.jpg);
+	float: right;
+}
+.movie_content a {
+	color: rgb(35, 109, 245);
+	font-weight: bold;
+}
+.movie_content a::before {
+	content: url(../img/icon_tv.png);
+	position: relative;
+	top: 4px;
+	margin-right: 5px;
 }
 .movie_info {
 	background-color: #fff;
@@ -93,24 +122,29 @@ p {margin: 0}
 .movie_content {
 	padding: 5px;
 }
-.movie_content a {
-	color: rgb(35, 109, 245);
-	font-weight: bold;
-}
 .summary_title {
 	font-weight: bold;
-}
-.movie_content a::before {
-background-image: url(../img/close.jpg);
 }
 .summary_content {
 	padding: 5px;
 }
-
 .movie_img {
 	float: left;
 	margin: 5px;
 }
 
-
-
+/* Movie Reviews */
+.movie_reviews {
+	width: 280px;
+}
+.movie_review--title {
+	background: #fff;
+	color: rgb(0, 38, 255);
+	font-weight: bold;
+	font-size: 12px;
+	padding: 5px;
+}
+.movie_review--title::after {
+	content: url(../img/star_1.png);
+	float: right;
+}
