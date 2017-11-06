@@ -148,3 +148,29 @@ p {margin: 0}
 	content: url(../img/star_1.png);
 	float: right;
 }
+.movie_review--last {
+	border-top: 1px dotted #BCBFC0;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+.movie_review--last a {
+	font-size: 10px;
+	font-weight: bold;
+	color: #0189bb;
+}
+.movie_review--last a::before {
+	content: url(../img/icon_2.jpg);
+}
+a.btn_more {
+	font-weight: lighter;
+	color: black;
+	padding-top: 1px;
+	float: right;
+}
+
+/* Column Right */
+.col-right {
+	padding: 20px 0 0 15px;
+}
+
+
