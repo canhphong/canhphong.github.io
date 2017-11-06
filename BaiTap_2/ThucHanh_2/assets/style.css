@@ -34,9 +34,8 @@ p {margin: 0}
 	font-weight: bold;
 	color: #000;
 }
-.summary {
-	padding: 5px;
-}
+.summary {padding: 5px;}
+.info {padding: 5px 8px 25px 12px;}
 /* End  Shared CSS */
 
 /*Daily News*/
@@ -118,27 +117,17 @@ p {margin: 0}
 	top: 4px;
 	margin-right: 5px;
 }
-.movie_info {
-	background-color: #fff;
-}
-.movie_content {
-	padding: 5px;
-}
-.summary_title {
-	font-weight: bold;
-}
-.summary_content {
-	padding: 5px;
-}
+.movie_info {background-color: #fff;}
+.movie_content {padding: 5px;}
+.summary_title {font-weight: bold;}
+.summary_content {padding: 5px;}
 .movie_img {
 	float: left;
 	margin: 5px;
 }
 
 /* Movie Reviews */
-.movie_reviews {
-	width: 280px;
-}
+.movie_reviews {width: 280px;}
 .movie_review--title {
 	background: #fff;
 	color: rgb(0, 38, 255);
@@ -203,3 +192,19 @@ a.btn_more {
 	margin: 0;
 	color: #fff
 }
+
+/* Footer */
+.footer {
+	background-color: #fff;
+	padding-top: 5px; 
+	text-align: center;
+}
+.footer_link a {
+	text-align: center;
+	color: #0189bb;
+	border-right: 1px solid #0189bb;
+	padding-right: 4px;
+}
+.footer p {color: #0189bb}
+
+
