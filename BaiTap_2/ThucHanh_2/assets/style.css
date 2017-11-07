@@ -8,33 +8,34 @@ body {
   font-size: 10px;
   background-color: #000;
 }
-
 #wrapper {
-  width: 850px;
+  width: 870px;
   margin: 0 auto;
   padding: 0;
-  display: flex;
-	background: #292728;
-	padding-bottom: 20px;
 }
-
+.outer {
+	background: #292728;
+	padding-bottom: 25px;
+	display: flex;
+}
 a {	text-decoration: none; }
 .clear { clear: both; }
 .dotted-top { border-top: 1px dotted #BCBFC0; }
 .solid-top { border-top: 1px solid #BCBFC0; }
-
+p {margin: 0}
 /*more element*/
 .more {
 	padding-bottom: 10px;
 	font-size: 11px;
 }
-
 .more a{
   position: relative;
   left: 215px;
 	font-weight: bold;
 	color: #000;
 }
+.summary {padding: 5px;}
+.info {padding: 5px 8px 25px 12px;}
 /* End  Shared CSS */
 
 /*Daily News*/
@@ -43,20 +44,18 @@ a {	text-decoration: none; }
 	padding: 15px 0 0 2px;
 }
 .news__img{ width: 260px; }
-
 .news__post {
 	display: flex;
-	background: white url(../../img/confidential-logo.gif) no-repeat;
-	padding-bottom: 35px;
+	background: white url(../img/confidential-logo.gif) no-repeat;
+	padding-bottom: 10px;
 	margin-bottom: 15px;
 	width: 570px;
-	background-position: 9px 245px;
+	background-position: 10px 260px;
 	background-size: auto 23px;
 }
 
 /* Showbuzz  */
 .showbuzz { width: 285px; }
-
 .showbuzz__title, .shootingstars__title {
 	background: url(../img/confidential-heading-bg.gif);
 	color: white;
@@ -64,9 +63,148 @@ a {	text-decoration: none; }
 	font-weight: bold;
 	padding: 5px 8px 5px 8px;
 }
-
 .showbuzz__info { border-right: 1px dotted #BCBFC0; }
+.showbuzz_more {
+	background: url(../img/h3-confidential-showbuzz-bg.gif) no-repeat;
+	background-size: 265px auto ;
+}
 
+/* Shooting Stars */
+.shootingstars { width: 285px; }
+.shootingstars__title, .shootingstars__title {
+	background: url(../img/confidential-heading-bg.gif);
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 5px 8px 5px 8px;
+}
+.shootingstars__info { border-right: 1px dotted #BCBFC0; }
+.shootingstars_more {
+	background: url(../img/h3-confidential-shootingstars-bg.gif) no-repeat;
+	background-size: 265px auto ;
+}
 
+/* Movie Trailers */
+.movie {display: flex;}
+.movie_trailers {
+	width: 270px;
+	float: left;
+	margin: 0 15px 0 15px;
+} 
+.movie_title {
+	background: url(../img/top-movie-trailers-bg.gif);
+	padding: 5px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+}
+.movie_accordion--title {
+	width: 100%;
+	color: #0f20bb;
+	text-align: left;
+}
+.movie_accordion--title::after {
+	content: url(../img/close.jpg);
+	float: right;
+}
+.movie_content a {
+	color: rgb(35, 109, 245);
+	font-weight: bold;
+}
+.movie_content a::before {
+	content: url(../img/icon_tv.png);
+	position: relative;
+	top: 4px;
+	margin-right: 5px;
+}
+.movie_info {background-color: #fff;}
+.movie_content {padding: 5px;}
+.summary_title {font-weight: bold;}
+.summary_content {padding: 5px;}
+.movie_img {
+	float: left;
+	margin: 5px;
+}
+
+/* Movie Reviews */
+.movie_reviews {width: 280px;}
+.movie_review--title {
+	background: #fff;
+	color: rgb(0, 38, 255);
+	font-weight: bold;
+	font-size: 12px;
+	padding: 5px;
+}
+.movie_review--title::after {
+	content: url(../img/star_1.png);
+	float: right;
+}
+.movie_review--last {
+	border-top: 1px dotted #BCBFC0;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+.movie_review--last a {
+	font-size: 10px;
+	font-weight: bold;
+	color: #0189bb;
+}
+.movie_review--last a::before {
+	content: url(../img/icon_2.jpg);
+}
+a.btn_more {
+	font-weight: lighter;
+	color: black;
+	padding-top: 1px;
+	float: right;
+}
+
+/* Column Right */
+.col-right {
+	padding: 20px 0 0 15px;
+}
+.search {
+	margin-left: 15px;
+	display: inline;
+}
+.search button {
+	border: none;
+	color: #fff;
+	background: #a8407d;
+}
+
+.footer_item {
+	background: #292728;
+	border-top: 1px dashed #fff;
+	padding-bottom: 10px;
+	text-align: center;
+	overflow: auto;
+}
+.footer_item--list {
+	list-style-type: none;
+}
+.footer_item--list li {
+	float: left;
+	margin: 0 60px 0 8px;
+	width: 95px;
+}
+.footer_item p {
+	margin: 0;
+	color: #fff
+}
+
+/* Footer */
+.footer {
+	background-color: #fff;
+	padding-top: 5px; 
+	text-align: center;
+}
+.footer_link a {
+	text-align: center;
+	color: #0189bb;
+	border-right: 1px solid #0189bb;
+	padding-right: 4px;
+}
+.footer p {color: #0189bb}
 
 
