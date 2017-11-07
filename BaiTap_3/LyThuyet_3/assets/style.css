@@ -8,6 +8,50 @@ body {
 #wrapper {
   color: #797782;
   padding: 20px;
- margin: 0 auto;  
- overflow: auto;
+  margin: 0 auto;
+  overflow: auto;
+}
+a {color:#797782 }
+.col-left {
+  width: 35%;
+  float: left;
+}
+.col-right {
+  width: 15%;
+}
+.info_name {
+  margin-bottom:35px;
+}
+.info_img {
+  float: left;
+  padding-right: 20px;
+  margin: 0 20px 25px 0;
+}
+.info_title {
+  color: #fff;
+  font-size: 12px;
+}
+.info p {
+    line-height: 15px;
+}
+.line {
+  margin-bottom: 15px;
+  border-bottom: 1px dotted #797782;
+}
+.more-info a {
+  color: #fff;
+  text-decoration: none;
+}
+.more-info::before {
+  content: url(../img/info.gif);
+  margin-right: 5px;
+}
+.info_list{
+  column-count: 2;
+  line-height: 25px;
+  list-style-image: url(../img/list2.gif);
+
+}
+.info_list li {
+  list-style-type: none;
 }
