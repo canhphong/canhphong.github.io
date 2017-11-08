@@ -7,6 +7,7 @@ body {
 }
 #wrapper {
   color: #797782;
+  background: #141416;
   padding: 20px;
   margin: 0 auto;
   overflow: auto;
@@ -15,9 +16,13 @@ a {color:#797782 }
 .col-left {
   width: 35%;
   float: left;
+  padding: 5px 35px 50px 50px;
 }
 .col-right {
   width: 15%;
+  float: left;
+  padding: 70px 20px 30px 20px;
+  background-color: #232326;
 }
 .info_name {
   margin-bottom:35px;
@@ -38,6 +43,7 @@ a {color:#797782 }
   margin-bottom: 15px;
   border-bottom: 1px dotted #797782;
 }
+
 .more-info a {
   color: #fff;
   text-decoration: none;
@@ -50,8 +56,14 @@ a {color:#797782 }
   column-count: 2;
   line-height: 25px;
   list-style-image: url(../img/list2.gif);
-
 }
 .info_list li {
   list-style-type: none;
 }
+
+/* Part Right */
+.logo_img {text-align: center;}
+.title {
+  color: #fff;
+}
+span {color: #fff;}
