@@ -6,38 +6,133 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-#container {
-  position: relative;
-  width: 720px;
-  margin: auto;
+
+/* CSS for Slider  */
+.slider {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
   overflow: hidden;
 }
-/* Thumbnail */
-.thumb {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-.thumb li,
-.thumb li a {
-  width: 100px;
-  height: 60px;
-}
-.thumb li a img {
-  width: 90px;
-  height: 45px;
-  border: 4px solid #60ff30
+.current-image {
+	width: auto;
+	height: 60%;
 }
 
-/* Slide */
-.slide,
-.slide li,
-.slide img {
-  width: 710px;
-  height: 350px;
-  position: relative;
+/* CSS for Thumnails */
+.thumnails {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	transition: all .5s;
 }
-.slide li {
-  position: absolute;
-  z-index: 10;
+
+.thumnails li {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	width: 100px;
+	min-width: 100px;
+	height: 51px;
+	margin: 0 5px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	transition: all .5s;
 }
+.thumnails li:first-of-type {
+	padding-left: 15px;
+}
+.thumnails li:last-of-type {
+	padding-right: 15px;
+}
+.thumb {
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	box-shadow: 0 0 20px #000;
+	transition: all .5s;
+}
+.current-image-list {
+	opacity: 1;
+  transition: all .5s;
+  border: 2px solid red;
+}
+.arrow {
+	display: flex;
+	position: absolute;
+  cursor: pointer;
+  border-radius: 50%; 
+  padding: 8px 16px;
+  font-size: 20px;
+}
+.arrow:hover {
+  background-color: #ddd;
+  color: black;
+}
+.arrow-left {
+	 left: 17%;
+  bottom: 50%;
+  background-color: #006696;
+  color: #fff;
+}
+.arrow-right {
+  right: 17%;
+  bottom: 50%;
+  background-color: #006696;
+  color: #fff;
+}
+
+ /*
+ * Animations
+ */
+
+ @keyframes fadeIn {
+     0% {opacity: 0}
+     100% {opacity: 1}
+ }
+
+ @keyframes slideInFromLeft {
+     0% {
+     	opacity: 0;
+     	transform: translateX(-100%);
+    	}
+     100% {
+     	opacity: 1;
+     	transform: translateX(0px);
+     }
+ }
+
+ @keyframes slideInFromRight {
+     0% {
+     	opacity: 0;
+     	transform: translateX(100%);
+    	}
+     100% {
+     	opacity: 1;
+     	transform: translateX(0px);
+     }
+ }
+
+ .slideInFromLeft {
+ 	animation: slideInFromLeft .5s ease-in-out;
+ }
+
+ .slideInFromRight {
+ 	animation: slideInFromRight .5s ease-in-out;
+ }
+
+ .fadeIn {
+ 	animation: fadeIn .5s ease-in-out;
+ }
