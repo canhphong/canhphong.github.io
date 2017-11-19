@@ -1,0 +1,18 @@
+﻿Tạo một form để nhập thông tin như:
+- Username
+- Password
+- Email
+- Birthday (khi click vào input sẽ hiện ra calendar của bài tập trước, 
+	    khi chọn ngày nào thì ngày đó sẽ hiện trong input)
+- 1 button submit dữ liệu lên server (server có thể dùng Php/Java/Ruby để check username
+	nếu username đã tồn tại, hiển thị thông báo kế textbox)
+
+Check validate:
+- Tất cả các input phải check validate 
+- Check validate 2 lần (tìm hiểu lý do)
+	+ Check bằng javascript, ok thì post data lên server
+	+ Trên server check validate lại bằng Php/Java/Ruby (chọn 1), ok mới insert DB
+- Các validate cần check: (có thể bổ sung thêm 1 số validate khác)
+          + Username, Password, email: không được bỏ trống, tối thiểu từ 8 kí tự trở lên
+          + Email: Phải có kí tự "@", dấu "." sau "@"
+          + Birthday: Ngày sinh <= ngày hiện tại
