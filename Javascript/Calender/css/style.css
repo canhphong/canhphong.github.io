@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #eee;
+}
+.container {
+	width: 50%;
+	margin: 0 auto;
+}
+.calendar {
+	display: inline-flex;
+	margin-top: 20px; 
+}
+.calendar input[type="text"] {
+	padding: 5px;
+}
+.icon {
+	margin-left: -35px;
+	cursor: pointer;
+
+}
