@@ -1,17 +1,8 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-body { background-color: #2d2d2d; }
-.container {
-	max-width: 454px;
-	margin: auto; 
-	background-color: #2d2d2d;
-}
+
 /* Main Calendar */
 .calendar > table {
-	width: 454px;
-	height: 296px;
+	width: 100%;
+	height: 100%;
 }
 .calendar tr > td {
 	cursor: pointer;
@@ -36,8 +27,6 @@ body { background-color: #2d2d2d; }
 	background: url(../img/icon-calendar.png) no-repeat right;
 	background-size: contain;
 	background-color: white;
-	width: 50%;
-	height: 30px;
 	font-size: 18px;
 	text-align: center;
 }
@@ -48,5 +37,4 @@ body { background-color: #2d2d2d; }
 	font-weight: bold;
 	text-align: center;
 }
-
 

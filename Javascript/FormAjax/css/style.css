@@ -1,0 +1,41 @@
+* {margin: 0;padding: 0;}
+.signup {
+	margin: auto;
+	width: 50%;
+	margin-top: 10px;
+}
+.form-ajax label {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="email"], #day-now {
+	border: 1px solid #32e3e3;
+    padding: 4px;
+    width: 200px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+input[type="submit"], input[type="reset"] {
+	background: blue;
+    padding: 5px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+}
+input[type="submit"]:hover, input[type="reset"]:hover {
+	background: red;
+}
+
+form label {
+	width: 80px;
+	display: block;
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+}
+.btn-submit {
+	margin: auto;
+    width: 50%;
+    margin-top: 15px;
+}

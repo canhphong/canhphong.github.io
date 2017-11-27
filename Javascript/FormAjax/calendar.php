@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en-US">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Bài tập Calendar JS</title>
-</head>
-
-<body>
-	<div class="container">
-		<div id="title"><input id="day-now" name="title" placeholder="dd/mm/yyyy" disabled="checked" /></div>
-		<div class="calendar ">
+		<div id="title">
+			<input type="text" id="day-now" name="title" placeholder="dd/mm/yyyy" disabled="checked" /></div>
 			<table>
 				<tbody>
 					<tr class="button ">
@@ -111,10 +99,9 @@
 					</tr>
 				</tbody>
 			</table>
-		</div>		
-	</div>
+	
 <!-- Link Javascript -->
-<script src="js/calender.js "></script>
+<!-- <script src="js/formajax.js "></script> -->
 </body>
 </div>
 </html>
