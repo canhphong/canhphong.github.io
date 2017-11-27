@@ -47,9 +47,16 @@ var inputs = document.forms['register'].getElementsByTagName('input');
         }
       var pass =value;
      }
+     // Check birthday
+      if(id == 'day-now')
+     {
+      // TODO: Write code to check the the date of birth
+        span.innerHTML = 'Date of birth <= current date';
+      
+     }
     }
    
-    // Nếu có lỗi thì chèn span vào hồ sơ, chạy onchange, submit return false, highlight border
+   // If there is an error, insert span into the record, run onchange, return false, highlight border
     if(span.innerHTML != '')
     {
      inputs[i].parentNode.appendChild(span);
@@ -64,7 +71,7 @@ var inputs = document.forms['register'].getElementsByTagName('input');
    return !errors;
   }// end valid()
  
-  // Chạy hàm kiểm tra valid()
+// Run the valid () function
   var register = document.getElementById('submit');
   register.onclick = function()
   {
@@ -82,4 +89,4 @@ var inputs = document.forms['register'].getElementsByTagName('input');
       valid();
      }
     }
-   }// end for
+   }

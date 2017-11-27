@@ -1,5 +1,6 @@
 
-		<div id="title"><input id="day-now" name="title" placeholder="dd/mm/yyyy" disabled="checked" /></div>
+		<div id="title">
+			<input type="text" id="day-now" name="title" placeholder="dd/mm/yyyy" disabled="checked" /></div>
 			<table>
 				<tbody>
 					<tr class="button ">
