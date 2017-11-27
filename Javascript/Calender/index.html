@@ -2,15 +2,114 @@
 <html lang="en-US">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Bài tập Calender JS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Bài tập Calendar JS</title>
 </head>
-<body>
-    
-      <script src="js/calender.js"></script>
-</body>
 
+<body>
+	<div class="container">
+		<div id="title"><input id="day-now" name="title" placeholder="dd/mm/yyyy" disabled="checked" /></div>
+		<div class="calendar ">
+			<table>
+				<tbody>
+					<tr class="button ">
+						<td onclick="chooseYear(-1) ">&#8647;</td>
+						<td onclick="chooseMonth(-1) ">&#8592;</td>
+						<td colspan="2 ">
+							<select class="choice " id="select-months " onchange="chooseFastMonth(); ">
+								<option value="0 ">January</option>
+								<option value="1 ">February</option>
+								<option value="2 ">March</option>
+								<option value="3 ">April</option>
+								<option value="4 ">May</option>
+								<option value="5 ">June</option>
+								<option value="6 ">July</option>
+								<option value="7 ">August</option>
+								<option value="8 ">September</option>
+								<option value="9 ">October</option>
+								<option value="10 ">November</option>
+								<option value="11 ">December</option>
+							</select>
+						</td>
+						<td>
+							<select class="choice " id="select-years " onchange="chooseFastYear(); ">
+							</select>
+						</td>
+						<td onclick="chooseMonth(1); ">&#8594;</td>
+						<td onclick="chooseYear(1); ">&#8649;</td>
+					</tr>
+					<tr class="days">
+						<td>Sun</td>
+						<td>Mon</td>
+						<td>Tue</td>
+						<td>Web</td>
+						<td>Thu</td>
+						<td>Fri</td>
+						<td>Sat</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>		
+	</div>
+<!-- Link Javascript -->
+<script src="js/calender.js "></script>
+</body>
+</div>
 </html>
