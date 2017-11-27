@@ -1,8 +1,9 @@
 /*
 Calendar JS
 */
+
 var dateNow = new Date();
-var currDay = dateNow.getDate();
+var currDay = dateNow.getDate(); 
 var currMon = dateNow.getMonth();
 var currYear = dateNow.getFullYear();
 var cellDay = document.getElementsByTagName('td');
@@ -34,12 +35,12 @@ function drawCalender(year, month) {
 	if (year === dateNow.getFullYear()) {
 		if (month === dateNow.getMonth()) {
 			var showCurdate = 12 + firstDay + dateNow.getDate();
-			cellDay[showCurdate].style.backgroundColor = "red";
+			cellDay[showCurdate].style.backgroundColor = "#00f3ff";
 		} else {
 			return true;
 		}
 	}
-	showTimeBox();
+	 showTimeBox();
 }
 
 //show list Year in combobox
@@ -107,7 +108,7 @@ function chooseAnyDay() {
 			}
 			if (dayCheck != "") {
 				dayAnyNow.value = dayCheck + "/" + (currMon + 1) + "/" + currYear;
-				this.style.border = "1px solid yellow";
+				this.style.border = "1px solid blue";
 			}
 		});
 	}

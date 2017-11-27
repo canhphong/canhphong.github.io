@@ -9,18 +9,18 @@ body { background-color: #2d2d2d; }
 	background-color: #2d2d2d;
 }
 /* Main Calendar */
-.calender > table {
+.calendar > table {
 	width: 454px;
 	height: 296px;
 }
-.calender tr > td {
+.calendar tr > td {
 	cursor: pointer;
 	width: 60px;
 	height: 30px;
 	text-align: center;
 	border: 1px solid white;
 }
-.calender tr > td:hover { border: 1px solid #00dd25; }
+.calendar tr > td:hover { border: 1px solid red; }
 .button {
 	cursor: pointer;
 	text-align: center;
@@ -37,7 +37,7 @@ body { background-color: #2d2d2d; }
 	background-size: contain;
 	background-color: white;
 	width: 50%;
-	height: 20px;
+	height: 30px;
 	font-size: 18px;
 	text-align: center;
 }
