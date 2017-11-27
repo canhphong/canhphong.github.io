@@ -9,7 +9,7 @@ var cellDay = document.getElementsByTagName('td');
 var listMon = document.getElementById("select-months");
 var listYear = document.getElementById("select-years");
 drawCalender(currYear, currMon);
- showlistYear();
+showlistYear();
 chooseAnyDay();
 
 // Draw Calendar 
@@ -21,12 +21,12 @@ function drawCalender(year, month) {
 	var i, day;
 	day = 13 + firstDay;
 
-	for (var i = 13; i < 55; i++) {
+	for (i = 13; i < 55; i++) {
 		cellDay[i].innerHTML = "";
 		cellDay[i].style.backgroundColor = "#fff";
 	}
 
-	for (var i = 1; i <= lastDate; i++) {
+	for (i = 1; i <= lastDate; i++) {
 		cellDay[day].innerHTML = i;
 		day++;
 	}
