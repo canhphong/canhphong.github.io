@@ -4,9 +4,9 @@
 }
 body { background-color: #2d2d2d; }
 .container {
-	background-color: #2d2d2d;
 	max-width: 454px;
 	margin: auto; 
+	background-color: #2d2d2d;
 }
 /* Main Calendar */
 .calender > table {
@@ -20,13 +20,12 @@ body { background-color: #2d2d2d; }
 	text-align: center;
 	border: 1px solid white;
 }
-.calender tr > td:hover { border: 1px solid green; }
-/*  */
+.calender tr > td:hover { border: 1px solid #00dd25; }
 .button {
 	cursor: pointer;
 	text-align: center;
 	color: blue;
-	background-color: #a9cce3;
+	background-color: #99c3dd;
 }
 .choice { 
 	cursor: pointer; 
@@ -34,14 +33,20 @@ body { background-color: #2d2d2d; }
 	height: 100%; 
 }
 #day-now {
+	background: url(../img/icon-calendar.png) no-repeat right;
+	background-size: contain;
+	background-color: white;
 	width: 50%;
 	height: 20px;
 	font-size: 18px;
 	text-align: center;
-	background: url(../image/Calendar.png) no-repeat right;
-	background-size: contain;
-	background-color: white;
 }
-
+.days {
+	color: #ff0000;
+	background-color: #bebebe;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
 
 
