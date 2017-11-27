@@ -12,14 +12,14 @@
 <body>
 	<div class="container">
 		<div class="signup">
-			<form action="#" method="post" name="signup" >
+			<form method="post" action="#" name="register" >
 				<p>
 					<label for="username">Username</label>
 					<input type="text" name="username" id="username">
 				</p>
 				<p>
 					<label for="password">Password</label>
-					<input type="text" name="password" id="password">
+					<input type="password" name="password" id="password">
 				</p>
 				<p>
 					<label for="email">Email</label>
@@ -30,12 +30,13 @@
 					<?php include_once 'calendar.php'; ?>
 				</p>
 				<p class="btn-submit">
-					<label for=""><input type="submit" value="SUBMIT"></label>
+					<input type="submit" name="action" id="submit" value="SUBMIT">
 					<input type="reset" value="REFREST">
 				</p>
 			</form>
 		</div>
-      <script src="js/formajax.js"></script>
+		<!-- Link JS -->
+      <script src="js/form_ajax.js"></script>
       <script src="js/calendar.js"></script>
 </body>
 
