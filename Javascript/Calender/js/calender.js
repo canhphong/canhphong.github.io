@@ -11,7 +11,7 @@ var listMon = document.getElementById("select-months");
 var listYear = document.getElementById("select-years");
 drawCalender(currYear, currMon);
 showlistYear();
-chooseAnyDay();
+selectDay();
 
 // Draw Calendar 
 function drawCalender(year, month) {
@@ -36,8 +36,6 @@ function drawCalender(year, month) {
 		if (month === dateNow.getMonth()) {
 			var showCurdate = 12 + firstDay + dateNow.getDate();
 			cellDay[showCurdate].style.backgroundColor = "#00f3ff";
-		} else {
-			return true;
 		}
 	}
 	 showTimeBox();
@@ -85,17 +83,17 @@ function chooseYear(year) {
 	drawCalender(currYear, currMon);
 }
 
-function chooseFastMonth() {
+function selectMonth() {
 	currMon = parseInt(listMon.value);
 	drawCalender(currYear, currMon);
 }
 
-function chooseFastYear() {
+function selectYear() {
 	currYear = parseInt(listYear.value);
 	drawCalender(currYear, currMon);
 }
 
-function chooseAnyDay() {
+function selectDay() {
 	var dayAnyNow = document.getElementById("day-now");
 	dayAnyNow.value = currDay + "/" + (currMon + 1) + "/" + currYear;
 
@@ -108,7 +106,7 @@ function chooseAnyDay() {
 			}
 			if (dayCheck != "") {
 				dayAnyNow.value = dayCheck + "/" + (currMon + 1) + "/" + currYear;
-				this.style.border = "1px solid blue";
+				this.style.border = "1px solid ";
 			}
 		});
 	}
