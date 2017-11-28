@@ -11,7 +11,7 @@
 	text-align: center;
 	border: 1px solid white;
 }
-.calendar tr > td:hover { border: 1px solid blue; }
+.calendar tr > td:hover { border: 1px solid blue;}
 .button {
 	cursor: pointer;
 	text-align: center;
