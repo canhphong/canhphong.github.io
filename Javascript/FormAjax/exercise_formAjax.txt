@@ -16,3 +16,6 @@ Check validate:
           + Username, Password, email: không được bỏ trống, tối thiểu từ 8 kí tự trở lên
           + Email: Phải có kí tự "@", dấu "." sau "@"
           + Birthday: Ngày sinh <= ngày hiện tại
+
+
+
