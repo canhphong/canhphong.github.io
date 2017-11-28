@@ -1,6 +1,7 @@
 
 		<div id="title">
-			<input type="text" id="day-now" name="calendar" placeholder="dd/mm/yyyy" disabled="false" /></div>
+			<input type="text" id="day-now" name="day-now" placeholder="dd/mm/yyyy" disabled="checked" />
+		</div>
 			<table>
 				<tbody>
 					<tr class="button ">
@@ -99,9 +100,4 @@
 					</tr>
 				</tbody>
 			</table>
-	
-<!-- Link Javascript -->
-<!-- <script src="js/formajax.js "></script> -->
-</body>
-</div>
-</html>
+<script src="js/calendar.js"></script>

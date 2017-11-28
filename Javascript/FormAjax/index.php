@@ -32,8 +32,7 @@
 				</p>
 				<p>
 					<label for="birthday">Birthday</label>
-					<?php include_once 'calendar.php'; ?>
-					<!-- <span class="text-danger"><?php if (isset($birthday_error)) echo $name_error; ?></span> -->
+					<?php include 'calendar.php'; ?>
 				</p>
 				<p class="btn-submit">
 					<input type="submit" name="signup" value="SUBMIT">
@@ -48,7 +47,7 @@
 		</div>
 		<!-- Link JS -->
       <!-- <script src="js/form_ajax.js"></script> -->
-      <script src="js/calendar.js"></script>
+      
 </body>
 
 </html>
