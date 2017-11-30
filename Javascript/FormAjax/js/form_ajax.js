@@ -48,12 +48,12 @@ var inputs = document.forms['register'].getElementsByTagName('input');
       var pass =value;
      }
      // Check birthday
-      if(id == 'day-now')
-     {
-      // TODO: Write code to check the the date of birth
-        span.innerHTML = 'Date of birth <= current date';
+     //  if(id == 'day-now')
+     // {
+     //  // TODO: Write code to check the the date of birth
+     //    span.innerHTML = 'Date of birth <= current date';
       
-     }
+     // }
     }
    
    // If there is an error, insert span into the record, run onchange, return false, highlight border
@@ -67,8 +67,8 @@ var inputs = document.forms['register'].getElementsByTagName('input');
     }
    }// end for
   
-   if(errors == false){alert('Đăng ký thành công');}
-   return !errors;
+   // if(errors == false){alert('Đăng ký thành công');}
+   // return !errors;
   }// end valid()
  
 // Run the valid () function
