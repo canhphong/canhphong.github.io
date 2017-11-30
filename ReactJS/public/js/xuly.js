@@ -4,11 +4,49 @@ var list;
 
 // Components Note
 var Note = React.createClass({
+	save() {
+		$.post('/update', {idEdit: this.props.id,noiDung: this.refs.txt.value}, function(data){
+			list.setState({array: data});
+			this.setState({onEdit: false});
+		});
+	},
+	cancel() {
+		this.setState({onEdit: false});
+	},
+	edit() {
+		this.setState({onEdit: true});
+	},
+
+	getInitialState() {
+		return {onEdit: false}
+	},
+
+	delete (){
+		$.post("/delete", {idDelete: this.props.id}, function(data) {
+			list.setState({array: data});
+		});
+	},
+
   render: function() {
-    return <div className="div-note">
-      {this.props.children}
+  	if(this.state.onEdit) {
+			return (
+				<div className="div-note">
+	      <input defaultValue={this.props.children} refs="txt"/>
+	      <button onClick = {this.save}>Save</button>
+	      <button onClick = {this.cancel}>Cancel</button>
+       </div>
+       )
+  	} else {
+  		 return (
+    	<div className="div-note">
+      <p>{this.props.children}</p>
+      <button onClick = {this.delete}>Delete</button>
+      <button onClick = {this.edit}>Edit</button>
+
                   </div>
-  }
+            )
+  				}
+  			}
 });
 
 // Function ADD
@@ -31,7 +69,7 @@ getInitialState() {
 			<button onClick={addDiv}> Add </button>
 			{
 				this.state.array.map(function(note, index) {
-				return <Note key={index}> {note}</Note>
+				return <Note key={index} id={index}> {note} </Note>
 			})
 		}
 			</div>
@@ -39,8 +77,9 @@ getInitialState() {
 	},
 
 	componentDidMount(){
+		var that = this;
 		$.post("/getNotes", function(data){
-			this.setState();
+			that.setState({array: data});
 		});
 	}
 
