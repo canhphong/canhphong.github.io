@@ -1,0 +1,2 @@
+- De bat dau chay server o localhost, go $ npm start
+- De doi port, vao package.json, doi thanh   "start": "set PORT=9999 && react-scripts start",
