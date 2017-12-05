@@ -4,30 +4,19 @@ import Products from './../components/Products';
 import Product from './../components/Product';
 import PropTypes from 'prop-types';
 
-class ProductsContainer extends Component {
+class CartContainer extends Component {
   render() {
-    var { products } = this.props;
+    var {cart} = this.props;
+    console.log(cart);
     return (
-      <Products>
-        { this.showProducts(products) }
-      </Products>
+      <div></div>
     );
-  }
-
-  showProducts(products) {
-    var result = null;
-    if (products.length > 0) {
-      result = products.map((product, index) => {
-        return <Product key={index} product={product} />
-      });
-    }
-    return result;
   }
 }
 
-ProductsContainer.propTypes = {
-  products : PropTypes.arrayOf(
-    PropTypes.shape({
+CartContainer.propTypes = {
+  cart : PropTypes.arrayOf(PropTypes.shape({
+    product : PropTypes.shape({
       id: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
@@ -35,14 +24,15 @@ ProductsContainer.propTypes = {
       price: PropTypes.number.isRequired,
       inventory: PropTypes.number.isRequired,
       rating: PropTypes.number.isRequired
-    })
-  ).isRequired
+    }).isRequired,
+      quantity: PropTypes.number.isRequired
+  })).isRequired
 }
 
 const mapStateToProps = state => {
   return {
-    products: state.products,
+      cart: state.cart
   }
 }
 
-export default connect(mapStateToProps, null) (ProductsContainer);
+export default connect(mapStateToProps, null) (CartContainer);
