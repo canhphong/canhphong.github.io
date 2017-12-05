@@ -5,6 +5,7 @@ import Product from './../components/Product';
 import PropTypes from 'prop-types';
 
 class ProductsContainer extends Component {
+
   render() {
     var { products } = this.props;
     return (

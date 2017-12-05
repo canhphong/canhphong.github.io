@@ -1,16 +1,36 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Products from './../components/Products';
-import Product from './../components/Product';
 import PropTypes from 'prop-types';
+import Cart from './../components/Cart';
+import CartItem from './../components/CartItem';
+import * as Message from './../constants/Message';
 
 class CartContainer extends Component {
+
   render() {
-    var {cart} = this.props;
+    var { cart } = this.props;
     console.log(cart);
     return (
-      <div></div>
+      <Cart>
+        {this.showCartItem(cart)}
+      </Cart>
     );
+  }
+
+  showCartItem = (cart) => {
+    var result = Message.MSG_CART_EMPTY;
+    if (cart.lenght > 0) {
+      result = cart.map((item, index) => {
+        return (
+           <CartItem
+            key={index}
+            item={item}
+            index={index}
+           />
+        );
+      });
+    }
+    return result;
   }
 }
 
@@ -25,14 +45,14 @@ CartContainer.propTypes = {
       inventory: PropTypes.number.isRequired,
       rating: PropTypes.number.isRequired
     }).isRequired,
-      quantity: PropTypes.number.isRequired
+    quantity : PropTypes.number.isRequired
   })).isRequired
 }
 
 const mapStateToProps = state => {
   return {
-      cart: state.cart
+    cart : state.cart
   }
 }
 
-export default connect(mapStateToProps, null) (CartContainer);
+export default connect(mapStateToProps, null)(CartContainer);

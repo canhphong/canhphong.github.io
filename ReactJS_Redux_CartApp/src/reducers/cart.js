@@ -15,7 +15,7 @@ var initialState = [
   }
 ];
 
-const products = (state = initialState, action) => {
+const cart = (state = initialState, action) => {
   switch (action.type) {
     case types.ADD_TO_CART:
       console.log(action);
