@@ -3,6 +3,7 @@ import * as Message from './../constants/Message';
 
 class Product extends Component {
   render() {
+
     var { product } = this.props;
 
     return (

@@ -45,6 +45,7 @@ ProductsContainer.propTypes = {
       rating: PropTypes.number.isRequired
     })
   ).isRequired,
+    onAddToCart : PropTypes.func.isRequired,
     onChangeMessage : PropTypes.func.isRequired
 }
 

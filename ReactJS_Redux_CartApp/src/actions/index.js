@@ -17,6 +17,14 @@ export const actChangeMessage = (message) => {
 export const actDeleteProductInCart = (product) => {
   return {
     type: Types.DELETE_PRODUCT_IN_CART,
-    // product.
+    product
+  }
+}
+
+export const actUpdateProductInCart = (product, quantity) => {
+  return {
+    type: Types.UPDATE_PRODUCT_IN_CART,
+    product,
+    quantity
   }
 }

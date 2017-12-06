@@ -4,7 +4,9 @@ import CartResult from './CartResult';
 
 class Cart extends Component {
   render() {
+
     var { children } = this.props;
+
     return (
       <section className="section">
           <div className="table-responsive">
