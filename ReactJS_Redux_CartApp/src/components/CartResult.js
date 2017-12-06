@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class CartResult extends Component {
   render() {
@@ -29,8 +30,8 @@ class CartResult extends Component {
 
   showTotalAmount = (cart) => {
     var total = 0;
-    if (cart > 0) {
-      for (var i = 0; i < cart; i++) {
+    if (cart.length > 0) {
+      for (var i = 0; i < cart.length; i++) {
         total += cart[i].product.price * cart[i].quantity;
       }
     }
