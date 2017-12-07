@@ -29,10 +29,10 @@ $product_arr = array(
   "description" => $product->description,
   "price" => $product->price,
   "category_id" => $product->category_id,
-  "category_name" => $product->category_name,
+  "category_name" => $product->category_name
 );
 
 // make it json format
-print_f(json_encode($product_arr));
+print_r(json_encode($product_arr));
 
  ?>
