@@ -19,34 +19,35 @@
     }
 
     // read products
-    function read() {
-      // select all query
-      $query = "SELECT
-                  c.name as category_name,
-                  p.id,
-                  p.name,
-                  p.description,
-                  p.price,
-                  p.category_id,
-                  p.created
+    function read(){
+
+        // select all query
+        $query = "SELECT
+                    c.name as category_name, p.id, p.name, p.description, p.price, p.category_id, p.created
                 FROM
-                  " . $this->table_name . "products p LEFT JOIN categories c
-                      ON p.category_id = c.id ORDER BY p.created DESC";
-      // prepare query statement
-      $stmt = $this->conn->prepare($query);
+                    " . $this->table_name . " p
+                    LEFT JOIN
+                        categories c
+                            ON p.category_id = c.id
+                ORDER BY
+                    p.created DESC";
 
-      // execute query call execute
-      $stmt->execute();
+        // prepare query statement
+        $stmt = $this->conn->prepare($query);
 
-      return $stmt;
+        // execute query
+        $stmt->execute();
+
+        return $stmt;
     }
 
 // create product
 function create() {
   // query to insert record
-  $query = "INSERT INTO".$this->table_name."
+  $query = "INSERT INTO
+  " . $this->table_name . "
 SET
-  name=:name, price=:price, description=:description, name=:name,category_id=:category_id,created=:created";
+  name=:name, price=:price, description=:description,category_id=:category_id,created=:created";
 
 // prepare query
 $stmt = $this->conn->prepare($query);
@@ -76,8 +77,15 @@ if ($stmt->execute()) {
 // used when filling up the update product form
 function readOne() {
   // query to read single record
-  $query = "SELECT * FROM
-          ". $this->table_name ."products p LEFT JOIN categories c ON p.id = ? LIMIT 0,1";
+  $query = "SELECT
+               c.name as category_name, p.id, p.name, p.description, p.price, p.category_id, p.created
+           FROM
+               " . $this->table_name . " p
+               LEFT JOIN
+                   categories c
+                       ON p.category_id = c.id
+           WHERE
+               p.id = ? LIMIT 0,1";
 
 // prepare query statement
 $stmt = $this->conn->prepare($query);
