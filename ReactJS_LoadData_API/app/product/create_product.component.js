@@ -124,9 +124,20 @@ window.CreateProductComponent = React.createClass({
                 onChange={this.onNameChange} />
               </td>
             </tr>
-          
+
             <tr>
               <td>Description</td>
+              <td>
+                <input type="text"
+                className='form-control'
+                value={this.state.description}
+                required
+                onChange={this.onDescriptionChange} />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Price</td>
               <td>
                 <input type="text"
                 className='form-control'
