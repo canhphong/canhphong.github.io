@@ -16,6 +16,7 @@ componentDidMount: function() {
   }.bind(this));
 },
 
+
 // on unmount, kill product fetching in case the request is still pending
 componentWillUnmount: function() {
   this.serverRequest.abort();

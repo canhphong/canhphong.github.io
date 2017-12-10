@@ -33,17 +33,17 @@ window.CreateProductComponent = React.createClass({
   // handle change name
   onNameChange: function(e) {
     this.setState({name: e.target.value});
-  }
+  },
 
   // handle description name
   onDescriptionChange: function(e) {
     this.setState({description: e.target.value});
-  }
+  },
 
   // handle price name
   onPriceChange: function(e) {
     this.setState({price: e.target.value});
-  }
+  },
 
   // handle save button clicked
   onSave: function(e) {
@@ -57,11 +57,10 @@ window.CreateProductComponent = React.createClass({
 
     // submit form data to api
     $.ajax({
-      url: "http://localhost/canhphong.github.io/ReactJS_API/api/product/create.php", type: "POST", contentType: 'application/json', data: JSON.stringify(form_data);
+      url: "http://localhost/canhphong.github.io/ReactJS_API/api/product/create.php", type: "POST", contentType: 'application/json', data: JSON.stringify(form_data),
       success: function(response) {
         // api message
         this.setState({successCreation: response['message']});
-
         // empty form
         this.setState({name: ""});
         this.setState({description: ""});
@@ -105,9 +104,7 @@ window.CreateProductComponent = React.createClass({
           : null
       }
 
-      <a href="#"
-        onClick={() => this.props.changeAppMode('read')}
-        className='btn btn-primary margin-bottom-1em'>
+      <a href="#" onClick={() => this.props.changeAppMode('read')} className='btn btn-primary margin-bottom-1em'>
         Read Products
       </a>
 
@@ -117,43 +114,45 @@ window.CreateProductComponent = React.createClass({
             <tr>
               <td>Name</td>
               <td>
-                <input type="text"
-                className='form-control'
-                value={this.state.name}
-                required
-                onChange={this.onNameChange} />
+                <input type="text" className='form-control' value={this.state.name} required="required" onChange={this.onNameChange}/>
               </td>
             </tr>
 
             <tr>
               <td>Description</td>
               <td>
-                <input type="text"
-                className='form-control'
-                value={this.state.description}
-                required
-                onChange={this.onDescriptionChange} />
+                <input type="text" className='form-control' value={this.state.description} required="required" onChange={this.onDescriptionChange}/>
               </td>
             </tr>
 
             <tr>
-              <td>Price</td>
+              <td>Price ($)</td>
               <td>
-                <input type="text"
-                className='form-control'
-                value={this.state.description}
-                required
-                onChange={this.onDescriptionChange} />
+                <input type="text" className='form-control' value={this.state.description} required="required" onChange={this.onDescriptionChange}/>
               </td>
             </tr>
 
+            <tr>
+              <td>Category</td>
+              <td>
+                <select onChange={this.onCategoryChange} className='form-control' value={this.state.selectedCategoryId}>
+                  <option value="-1">
+                    Select Category...
+                  </option>
+                  {categoriesOptions}
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>
+                <button className='btn btn-primary' onClick={this.onSave}>Save</button>
+              </td>
+            </tr>
           </tbody>
         </table>
       </form>
-
-
-    </div>)
-
+    </div>);
   }
-
 });
