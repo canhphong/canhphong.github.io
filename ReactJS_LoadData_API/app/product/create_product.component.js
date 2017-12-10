@@ -106,8 +106,8 @@ window.CreateProductComponent = React.createClass({
 
         this.state.successCreation == "Product was created."
           ? <div className='alert alert-success'>
-              Product was saved.
-            </div>
+            Product was saved.
+          </div>
           : null
       }
 
@@ -115,8 +115,8 @@ window.CreateProductComponent = React.createClass({
 
         this.state.successCreation == "Unable to create product."
           ? <div className='alert alert-danger'>
-              Unable to save product. Please try again.
-            </div>
+            Unable to save product. Please try again.
+          </div>
           : null
       }
 
