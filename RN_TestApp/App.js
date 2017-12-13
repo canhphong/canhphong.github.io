@@ -1,16 +1,30 @@
 import React, {Component} from 'react';
 import {AppRegistry, Text, View} from 'react-native';
+import {StackNavigator} from 'react-navigation';
 
-import Component4 from './app/components/Component4/Component4'
+import Splash from './src/Splash';
+import Main from './src/Main';
 
-export default class MyApp extends Component {
-  render() {
-    return (
-        <View>
-          <Component4 />
-        </View>
-    )
+// export default class MyApp extends Component {
+//   render() {
+//     return (
+//         <View>
+//           <Splash />
+//         </View>
+//     )
+//   }
+// }
+
+
+// AppRegistry.registerComponent('MyApp', () => MyApp );
+
+const Navigation = StackNavigator({
+  Home: {
+    screen: Splash,
+  },
+  main: {
+    screen: Main,
   }
-}
+})
 
-AppRegistry.registerComponent('MyApp', () => MyApp );
+export default Navigation;
