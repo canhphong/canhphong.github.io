@@ -1,28 +1,34 @@
 <?php
+require_once(dirname(__FILE__).'/Autoload.php');
 
-require_once(dirname(__FILE__).'/Router.php');
+/*
+ * App
+ */
 
-class App {
-
+class App
+{
     private $router;
+
+    public static $config;
+
     function __construct()
     {
-        $this->router = new Router;
-        $this->router->get('/', function () {
-            echo 'Day la trang home';
-        });
-        $this->router->post('/user', function () {
-            echo 'Day la trang user';
-        });
-        $this->router->get('/news', function () {
-            echo 'Day la trang news';
-        });
-        $this->router->any('/product', function () {
-            echo 'Day la trang product';
-        });
+        new Autoload(self::$config['rootDir']);
+
+        $this->router = new Router(self::$config['basePath']);
+
     }
 
-    public function run() {
-       $this->router->run();
+    public static function setConfig($config) {
+        self::$config = $config;
+    }
+
+    public static function getConfig() {
+        return self::$config;
+    }
+
+    public function run()
+    {
+        $this->router->run();
     }
 }
