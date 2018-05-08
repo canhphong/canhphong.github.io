@@ -1,6 +1,6 @@
 <?php
 require_once(dirname(__FILE__).'/Autoload.php');
-
+use app\core\Registry;
 /*
  * App
  */
@@ -9,23 +9,18 @@ class App
 {
     private $router;
 
-    public static $config;
-
     function __construct()
     {
-        new Autoload(self::$config['rootDir']);
+        new Autoload($config['rootDir']);
 
-        $this->router = new Router(self::$config['basePath']);
+        $this->router = new Router($config['basePath']);
+
+        Registry::getIntance()->config = $config;
 
     }
 
-    public static function setConfig($config) {
-        self::$config = $config;
-    }
 
-    public static function getConfig() {
-        return self::$config;
-    }
+
 
     public function run()
     {

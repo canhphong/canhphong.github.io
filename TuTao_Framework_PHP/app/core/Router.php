@@ -1,4 +1,5 @@
 <?php
+use app\core\Registry;
 
 /*
  * Router
@@ -120,9 +121,11 @@ class Router
         $classNamespace = 'app\\controllers\\' . $className;
 
         if (class_exists($classNamespace)) {
+            Registry::getIntance()->controller = $className;
             $object = new $classNamespace;
 
             if (method_exists($classNamespace, $methodName)) {
+                Registry::getIntance()->action = $methodName;
                 call_user_func_array([$object, $methodName], $params);
             }
             else {
@@ -132,7 +135,6 @@ class Router
         } else {
             die('Class "' . $classNamespace . '" not found');
        }
-
     }
 
     function run()

@@ -1,11 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Long
- * Date: 4/19/2018
- * Time: 2:26 PM
- */
 
 require_once (dirname(__FILE__).'/../app/core/App.php');
-$app = new App;
+$config = require_once (dirname(__DIR__).'/config/main.php');
+
+$app = new App($config);
 $app->run();

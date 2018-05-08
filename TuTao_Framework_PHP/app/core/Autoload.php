@@ -1,5 +1,6 @@
 <?php
 
+use app\core\AppException;
 class Autoload {
     private $rootDir;
 
@@ -19,7 +20,8 @@ class Autoload {
         if (file_exists($filePath))
             require_once($filePath);
         else
-            die("$class does not exixts");
+            throw new AppException("$class does not exixts");
+//            die("$class does not exixts");
     }
 
     private function autoLoadFile() {
@@ -34,6 +36,4 @@ class Autoload {
             'app/routers.php'
         ];
     }
-
-
 }

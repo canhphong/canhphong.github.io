@@ -2,10 +2,12 @@
 
 return [
     'basePath' => '/canhphong.github.io/TuTao_Framework_PHP/public',
-    'rootPath' => dirname(dirname(__FILE__)),
+    'rootDir' => dirname(__DIR__),
+    'layout' => 'layouts/main',
     'db' => [
-        'user' => '',
+        'host' => '127.0.0.1',
+        'port' => 3306,
+        'user' => 'root',
         'password' => '',
-
     ]
 ];
