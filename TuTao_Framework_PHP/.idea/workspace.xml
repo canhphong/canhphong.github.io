@@ -14,8 +14,8 @@
       <file leaf-file-name="App.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/core/App.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="209">
+              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -34,14 +34,14 @@
       <file leaf-file-name="Autoload.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/core/Autoload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+            <state relative-caret-position="380">
+              <caret line="22" column="61" lean-forward="true" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddException.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddException.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/core/AddException.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
@@ -54,15 +54,23 @@
       <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/core/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="45" column="57" lean-forward="false" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+            <state relative-caret-position="380">
+              <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
               <folding>
                 <element signature="e#27#36#0#PHP" expanded="true" />
-                <element signature="e#289#368#0#PHP" expanded="false" />
-                <element signature="e#374#560#0#PHP" expanded="false" />
-                <element signature="e#566#946#0#PHP" expanded="false" />
-                <element signature="e#1548#1870#0#PHP" expanded="false" />
+                <element signature="e#371#557#0#PHP" expanded="false" />
+                <element signature="e#1539#1861#0#PHP" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,22 +85,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/core/Router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-931">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="156">
+              <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+              <folding>
+                <element signature="e#6#28#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,12 +135,12 @@
         <option value="$PROJECT_DIR$/public/test.php" />
         <option value="$PROJECT_DIR$/app/core/Registry.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/app/routers.php" />
+        <option value="$PROJECT_DIR$/app/core/AddException.php" />
+        <option value="$PROJECT_DIR$/app/core/Autoload.php" />
         <option value="$PROJECT_DIR$/app/core/App.php" />
         <option value="$PROJECT_DIR$/app/core/Router.php" />
         <option value="$PROJECT_DIR$/app/core/Controller.php" />
-        <option value="$PROJECT_DIR$/app/routers.php" />
-        <option value="$PROJECT_DIR$/app/core/Autoload.php" />
-        <option value="$PROJECT_DIR$/app/core/AddException.php" />
       </list>
     </option>
   </component>
@@ -194,6 +194,19 @@
             <path>
               <item name="TuTao_Framework_PHP" type="b2602c69:ProjectViewProjectNode" />
               <item name="TuTao_Framework_PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TuTao_Framework_PHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TuTao_Framework_PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TuTao_Framework_PHP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TuTao_Framework_PHP" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -211,7 +224,7 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../fw-php" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
@@ -253,12 +266,12 @@
       <workItem from="1524824991023" duration="977000" />
       <workItem from="1524969711632" duration="251000" />
       <workItem from="1525655892187" duration="22989000" />
-      <workItem from="1525743603309" duration="27674000" />
+      <workItem from="1525743603309" duration="30716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77529000" />
+    <option name="totallyTimeSpent" value="80571000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -614,14 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="57" column="35" lean-forward="false" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -646,33 +651,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/App.php">
+    <entry file="file://$PROJECT_DIR$/app/routers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="266">
+          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/Router.php">
+    <entry file="file://$PROJECT_DIR$/app/core/AddException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-931">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="266">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="45" column="57" lean-forward="false" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
-          <folding>
-            <element signature="e#27#36#0#PHP" expanded="true" />
-            <element signature="e#289#368#0#PHP" expanded="false" />
-            <element signature="e#374#560#0#PHP" expanded="false" />
-            <element signature="e#566#946#0#PHP" expanded="false" />
-            <element signature="e#1548#1870#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -684,26 +675,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/core/Autoload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        <state relative-caret-position="380">
+          <caret line="22" column="61" lean-forward="true" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/AddException.php">
+    <entry file="file://$PROJECT_DIR$/app/core/App.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="209">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="59" column="21" lean-forward="false" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="e#6#28#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+          <folding>
+            <element signature="e#27#36#0#PHP" expanded="true" />
+            <element signature="e#371#557#0#PHP" expanded="false" />
+            <element signature="e#1539#1861#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>

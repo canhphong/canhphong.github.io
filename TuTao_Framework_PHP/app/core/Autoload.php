@@ -21,7 +21,6 @@ class Autoload {
             require_once($filePath);
         else
             throw new AppException("$class does not exixts");
-//            die("$class does not exixts");
     }
 
     private function autoLoadFile() {

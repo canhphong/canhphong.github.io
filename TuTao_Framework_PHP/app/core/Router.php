@@ -1,13 +1,13 @@
 <?php
 use app\core\Registry;
-
+use app\core\AppException;
 /*
  * Router
  */
 class Router
 {
     private static $routers = [];
-
+    private $basePath;
     function __construct()
     {
 
@@ -16,9 +16,9 @@ class Router
 //  getRequestURL()
     private function getRequestURL()
     {
-        $basePath = \App::getConfig()['basePath'];
+//        $basePath = \App::getConfig()['basePath'];
         $url = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '/';
-        $url = str_replace($basePath, '', $url);
+        $url = str_replace($this->basePath, '', $url);
         $url = $url === '' || empty($url) ? '/' : $url;
         return $url;
     }
@@ -57,7 +57,7 @@ class Router
     public function map()
     {
         $checkRoute = false;
-
+        $params = [];
         $requestURL = $this->getRequestURL();
         $requestMethod = $this->getRequestMethod();
         $routers = self::$routers;
@@ -129,11 +129,11 @@ class Router
                 call_user_func_array([$object, $methodName], $params);
             }
             else {
-                die('Method "' . $methodName . '" not found');
+                throw new AppException('Method "' . $methodName . '" not found');
             }
 
         } else {
-            die('Class "' . $classNamespace . '" not found');
+            throw new AppException('Class "' . $classNamespace . '" not found');
        }
     }
 

@@ -12,7 +12,7 @@ class Controller
     public function __construct()
     {
         $this->config = Registry::getIntance()->config;
-        $this->layout = App::getConfig()['layout'];
+        $this->layout = $this->config['layout'];
     }
 
     public function setLayout($layout)
@@ -30,7 +30,7 @@ class Controller
 
     public function render($view, $data = null)
     {
-        $rootDir = App::getConfig()['rootDir'];
+        $rootDir = $this->config['rootDir'];
 
         $content = $this->getViewContent($view, $data);
         if ($this->layout != null) {
@@ -45,7 +45,7 @@ class Controller
     {
         $controller = Registry::getIntance()->controller;
         $folderView = strtolower(str_replace('Controller', '', $controller));
-        $rootDir = App::getConfig()['rootDir'];
+        $rootDir = $this->config['rootDir'];
 
 
         if (is_array($data))
