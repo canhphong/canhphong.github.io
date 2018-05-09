@@ -63,6 +63,7 @@ class Controller
 
     public function renderPartial($view, $data=null)
     {
+        $rootDir = $this->config['rootDir'];
         if (is_array($data))
             extract($data, EXTR_PREFIX_SAME, "data");
         else

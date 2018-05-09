@@ -1,9 +1,14 @@
 <?php
 use app\core\Controller;
+use app\core\QueryBuilder;
+
 Router::get('/home', 'HomeController1@index');
 Router::get('/', function () {
-    $ct = new Controller;
-    $ct->render('index', ['age' => 22, 'name' => 'phong']);
+    $builder = QueryBuilder::table('abc')->select('col1','col2')->distinct();
+    echo '<pre>';
+    print_r($builder);
+//    $ct = new Controller;
+//    $ct->render('index', ['age' => 22, 'name' => 'phong']);
 });
 
 Router::get('/news', function (){
@@ -13,4 +18,3 @@ Router::get('/news', function (){
 Router::any('*', function (){
     echo '404';
 });
-
